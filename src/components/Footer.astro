@@ -1,0 +1,12 @@
+---
+import { profile } from "../data/profile";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-zinc-200 dark:border-zinc-800">
+  <div class="mx-auto flex max-w-5xl flex-col gap-2 px-5 py-8 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 dark:text-zinc-500">
+    <p>© {year} {profile.name}</p>
+    <p>{profile.title} · {profile.location}</p>
+  </div>
+</footer>
