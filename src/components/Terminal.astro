@@ -1,4 +1,13 @@
+<script is:inline>
+  document.documentElement.classList.add("terminal-animation-ready");
+  window.setTimeout(
+    () => document.documentElement.classList.remove("terminal-animation-ready"),
+    1500
+  );
+</script>
+
 <div
+  data-terminal
   class="w-full rounded-2xl border border-zinc-200 bg-zinc-950 shadow-2xl shadow-indigo-500/15 dark:border-zinc-800"
 >
   <div class="flex items-center gap-2 border-b border-zinc-800 px-5 py-3.5">
@@ -14,68 +23,176 @@
       目前在做 · Framework 系统定制
     </span>
   </div>
-  <div class="space-y-4 p-6 font-mono text-sm leading-7 sm:p-8 sm:text-base sm:leading-8">
-    <p>
+  <div class="min-h-[42rem] space-y-4 p-6 font-mono text-sm leading-7 sm:p-8 sm:text-base sm:leading-8">
+    <p data-terminal-line>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
-      <span class="text-zinc-200"> whoami</span>
+      <span data-terminal-typed class="text-zinc-200"> whoami</span>
+      <span data-terminal-cursor hidden class="cursor-blink ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
-    <p class="text-zinc-400">
+    <p data-terminal-output class="text-zinc-400">
       软件工程师 · <span class="text-indigo-400">Android Framework</span> · 武汉
     </p>
-    <p>
+    <p data-terminal-line>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
-      <span class="text-zinc-200"> cat current.txt</span>
+      <span data-terminal-typed class="text-zinc-200"> cat current.txt</span>
+      <span data-terminal-cursor hidden class="cursor-blink ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
-    <p class="text-zinc-400">
+    <p data-terminal-output class="text-zinc-400">
       系统定制 → <span class="text-violet-400">AMS · WMS · PMS · NFC</span>
     </p>
-    <p>
+    <p data-terminal-line>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
-      <span class="text-zinc-200"> cat motto.txt</span>
+      <span data-terminal-typed class="text-zinc-200"> cat motto.txt</span>
+      <span data-terminal-cursor hidden class="cursor-blink ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
-    <p class="text-zinc-300">做扎实的系统，也做有用的工具。</p>
-    <p>
+    <p data-terminal-output class="text-zinc-300">做扎实的系统，也做有用的工具。</p>
+    <p data-terminal-line>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
-      <span class="text-zinc-200"> ls projects/</span>
+      <span data-terminal-typed class="text-zinc-200"> ls projects/</span>
+      <span data-terminal-cursor hidden class="cursor-blink ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
-    <p class="text-zinc-400">
+    <p data-terminal-output class="text-zinc-400">
       <span class="text-sky-400">企业管理后台</span>
       <span class="text-zinc-600"> · </span>
       <span class="text-emerald-400">文创电商小程序</span>
       <span class="text-zinc-600"> · </span>
       <span class="text-amber-400">趣味下班倒计时APP</span>
     </p>
-    <p>
+    <p data-terminal-line>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
-      <span class="text-zinc-200"> cat exploring.txt</span>
+      <span data-terminal-typed class="text-zinc-200"> cat exploring.txt</span>
+      <span data-terminal-cursor hidden class="cursor-blink ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
-    <p class="text-zinc-400">
+    <p data-terminal-output class="text-zinc-400">
       <span class="text-fuchsia-400">Agent 工作流</span>
       <span class="text-zinc-600"> · </span>
       <span class="text-fuchsia-400">AI Infra</span>
     </p>
-    <p>
+    <p data-terminal-line>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
-      <span class="text-zinc-200"> ./open</span>
-      <span class="text-zinc-500"> --links</span>
+      <span data-terminal-typed class="text-zinc-200"> ./open</span>
+      <span data-terminal-typed class="text-zinc-500"> --links</span>
+      <span data-terminal-cursor hidden class="cursor-blink ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
-    <p class="text-zinc-400">
+    <p data-terminal-output class="text-zinc-400">
       <a href="#projects" class="text-indigo-400 underline decoration-indigo-400/40 underline-offset-4 transition hover:text-indigo-300">→ 查看项目</a>
       <span class="mx-2 text-zinc-600">·</span>
       <a href="https://github.com/yqForge" target="_blank" rel="noreferrer" class="text-indigo-400 underline decoration-indigo-400/40 underline-offset-4 transition hover:text-indigo-300">→ GitHub</a>
       <span class="mx-2 text-zinc-600">·</span>
       <a href="#contact" class="text-indigo-400 underline decoration-indigo-400/40 underline-offset-4 transition hover:text-indigo-300">→ 联系我</a>
     </p>
-    <p>
+    <p data-terminal-final>
       <span class="text-cyan-400">~/yq</span>
       <span class="text-emerald-400"> $</span>
       <span class="cursor-blink ml-1.5 inline-block h-4 w-2 translate-y-0.5 bg-zinc-400 sm:h-5"></span>
     </p>
   </div>
 </div>
+
+<script>
+  const sleep = (duration: number) =>
+    new Promise<void>((resolve) => window.setTimeout(resolve, duration));
+
+  const typeText = async (element: HTMLElement, text: string) => {
+    for (const character of text) {
+      element.textContent += character;
+
+      const delay =
+        character === " "
+          ? 25 + Math.random() * 25
+          : 42 + Math.random() * 48;
+      await sleep(delay);
+    }
+  };
+
+  const animateTerminal = async (terminal: HTMLElement) => {
+    if (terminal.dataset.animated === "true") return;
+    terminal.dataset.animated = "true";
+
+    const lines = Array.from(
+      terminal.querySelectorAll<HTMLElement>("[data-terminal-line]")
+    );
+    const outputs = Array.from(
+      terminal.querySelectorAll<HTMLElement>("[data-terminal-output]")
+    );
+    const finalPrompt = terminal.querySelector<HTMLElement>(
+      "[data-terminal-final]"
+    );
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.remove("terminal-animation-ready");
+      return;
+    }
+
+    const commands = lines.map((line) =>
+      Array.from(
+        line.querySelectorAll<HTMLElement>("[data-terminal-typed]")
+      ).map((part) => ({ element: part, text: part.textContent ?? "" }))
+    );
+
+    [...lines, ...outputs, ...(finalPrompt ? [finalPrompt] : [])].forEach(
+      (element) => {
+        element.hidden = true;
+      }
+    );
+    commands.flat().forEach(({ element }) => {
+      element.textContent = "";
+    });
+
+    document.documentElement.classList.remove("terminal-animation-ready");
+    await sleep(350);
+
+    for (const [index, line] of lines.entries()) {
+      line.hidden = false;
+      const cursor = line.querySelector<HTMLElement>(
+        "[data-terminal-cursor]"
+      );
+      if (cursor) cursor.hidden = false;
+
+      for (const { element, text } of commands[index]) {
+        await typeText(element, text);
+      }
+
+      await sleep(260);
+      if (cursor) cursor.hidden = true;
+
+      const output = outputs[index];
+      if (output) {
+        output.hidden = false;
+        output.classList.add("terminal-output-enter");
+      }
+      await sleep(480);
+    }
+
+    if (finalPrompt) finalPrompt.hidden = false;
+  };
+
+  document
+    .querySelectorAll<HTMLElement>("[data-terminal]")
+    .forEach((terminal) => void animateTerminal(terminal));
+</script>
+
+<style>
+  :global(.terminal-animation-ready) [data-terminal-line],
+  :global(.terminal-animation-ready) [data-terminal-output],
+  :global(.terminal-animation-ready) [data-terminal-final] {
+    visibility: hidden;
+  }
+
+  .terminal-output-enter {
+    animation: terminal-output-in 180ms ease-out both;
+  }
+
+  @keyframes terminal-output-in {
+    from {
+      opacity: 0;
+      transform: translateY(-3px);
+    }
+  }
+</style>
