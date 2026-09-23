@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "Pinia",
     ],
     image: "/images/enterprise-ops.svg",
-    sourceNote: "源码不开源",
+    sourceNote: "商业项目不开源",
     featured: true,
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     role: "全栈开发",
     techStack: ["uni-app", "Vue", "ECharts"],
     image: "/images/cultural-miniapp.svg",
-    sourceNote: "源码不开源",
+    sourceNote: "商业项目不开源",
   },
   {
     slug: "off-work-countdown",
@@ -53,6 +53,6 @@ export const projects: Project[] = [
     role: "独立开发",
     techStack: ["Android"],
     image: "/images/off-work-countdown.svg",
-    sourceNote: "GitHub 后续补充",
+    sourceNote: "GitHub 已开源",
   },
 ];

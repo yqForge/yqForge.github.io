@@ -3,7 +3,7 @@ export const skillGroups = [
     title: "Android",
     items: [
       "Android 应用开发",
-      "Android Framework",
+      "Framework",
       "AMS",
       "WMS",
       "PMS",
